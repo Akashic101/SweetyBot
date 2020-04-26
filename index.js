@@ -1,4 +1,5 @@
 const tmi = require('tmi.js');
+require('dotenv').config()
 
 const options = {
     options: {
@@ -10,7 +11,7 @@ const options = {
     },
     identity: {
         username: 'SweetyBot',
-        password: 'oauth:20yw252ciaqck24hj613w2dodlrlot',
+        password: process.env.IDENTITY_PASSWORD,
     },
     channels: ['Redfur_13'],
 };
