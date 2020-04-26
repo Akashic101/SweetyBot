@@ -1,0 +1,16 @@
+{
+  "name": "sweetytwitch",
+  "version": "1.0.0",
+  "description": "A Twitch Bot for Redfur13/SweetyComics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akashic",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "tmi.js": "^1.5.0",
+    "twitch-js": "^2.0.0-beta.33"
+  }
+}
