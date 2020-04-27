@@ -1,20 +1,5 @@
 const tmi = require('tmi.js');
-require('dotenv').config()
-
-const options = {
-    options: {
-        debug: true,
-    },
-    connection: {
-        cluster: 'aws',
-        reconnect: true,
-    },
-    identity: {
-        username: 'SweetyBot',
-        password: process.env.IDENTITY_PASSWORD,
-    },
-    channels: ['Redfur_13'],
-};
+require('dotenv').config();
 
 const client = new tmi.client(options);
 
@@ -52,8 +37,15 @@ client.on('chat', (channel, user, message, self) => {
         client.say('Redfur_13', 'https://www.webtoons.com/en/challenge/sweety-comics/list?title_no=389966')
     }
 
-    if(commandmessage === 'fiverr') {
+    if(commandmessage === '!fiverr') {
         client.say('Redfur_13', 'https://www.fiverr.com/share/9dNkgd')
     }
 
-});
+    if(commandmessage === '!command' || commandmessage === '!commands') {
+        client.say('Redfur_13', '!instagram, !discord, !facebook, !youtube, !twitter, !webtoon, !fiverr')
+    }
+
+    if(commandmessage === '!uptime') {
+        client.say('Redfur_13', 'The hell do I know, I\'m a cat')
+    }
+}});
