@@ -63,4 +63,4 @@ client.on('chat', (channel, user, message, self) => {
     if(commandmessage === '!uptime') {
         client.say('Redfur_13', 'The hell do I know, I\'m a cat')
     }
-}});
+});
