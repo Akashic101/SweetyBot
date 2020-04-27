@@ -32,7 +32,7 @@ Users can enter following commands at the moment, which result in a link to the 
 
 ## How to install
 First you need to install [Node](https://nodejs.org/en/). After that, create and go into the folder where the bot should be in, for example with   
-`mkdir -p Twitch-bot && cd Twitch-bot`.  
+`mkdir Twitch-bot && cd Twitch-bot`.  
 Next you can clone the necessary code with  
 `git clone https://github.com/Akashic101/SweetyBot.git`  
 When that is done you can use  
