@@ -10,7 +10,7 @@ const options = {
         reconnect: true,
     },
     identity: {
-        username: "SweetyBot",
+        username: "SweetyTheRagdoll",
         password: process.env.IDENTITY_PASSWORD,
     },
     channels: ['Redfur_13'],
