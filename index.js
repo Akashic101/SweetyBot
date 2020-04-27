@@ -1,6 +1,21 @@
 const tmi = require('tmi.js');
 require('dotenv').config();
 
+const options = {
+    options: {
+        debug: true,
+    },
+    connection: {
+        cluster: 'aws',
+        reconnect: true,
+    },
+    identity: {
+        username: "SweetyBot",
+        password: process.env.IDENTITY_PASSWORD,
+    },
+    channels: ['Redfur_13'],
+};
+
 const client = new tmi.client(options);
 
 client.connect();
