@@ -63,4 +63,9 @@ client.on('chat', (channel, user, message, self) => {
     if(commandmessage === '!uptime') {
         client.say('Redfur_13', 'The hell do I know, I\'m a cat')
     }
+    
+    if(commandmessage === '!spotify') {
+        client.say('Redfur_13', 'Favorites: https://open.spotify.com/playlist/3UME90dv7wKZyPzF8dZR1T?si=ldE-69ntRGKEQ_Dko9tWzg');
+        client.say('Redfur_13', 'Soundtracks: https://open.spotify.com/playlist/0UjcGDnWcOLUnevCTqtpEh?si=Bv7ojc8XRSqeiYnrjqK6_Q')
+    }
 });
