@@ -15,6 +15,7 @@ ___
 * [General Info](#general-info)
 * [Features](#features)
 * [How to Install](#how-to-install)
+* [Auto launch](#auto-launch)
 * [TO DO](#to-do)
 
 ## General Info
@@ -56,6 +57,9 @@ After that you can launch the bot either with
 `node .`  
 or  
 `node index.js`
+
+ ## Auto Launch
+ If you want SweetyPi to automatically boot whenever your system is starting you can use [pm2](https://www.npmjs.com/package/pm2) for this. Simply install it with `npm install pm2`, but instead of launching SweetyPi with `node .` or `node index.js`, use `pm2 start index.js`. SweetyPi is now daemonized, monitored and kept alive forever. If you want to see how many resources SweetyPi is using, enter `pm2 list` or `pm2 monit` for more in-depth information
 
 ## TO DO
 * Add more social-media commands
