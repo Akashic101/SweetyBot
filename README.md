@@ -29,6 +29,7 @@ Users can enter following commands at the moment, which result in a link to the 
 * `!twitter`
 * `!webtoon` or `!webtoons`
 * `!fiverr`
+* `!spotify
 
 ## How to install
 First you need to install [Node](https://nodejs.org/en/). After that, create and go into the folder where the bot should be in, for example with   
